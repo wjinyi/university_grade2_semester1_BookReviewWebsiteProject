@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>create book review</title>
+</head>
+<style type="text/css">
+	*{margin:0;padding: 0;list-style: none;}
+	body{
+		background-color: #fbfaf6;
+	}
+	#titlem{
+		height: 60px;
+		background-color: #f6f6f2;
+		width: 100%;
+		position: relative;
+		bottom: 5px;
+		border-bottom: 1px solid #ddd;
+	}
+	.zmb{
+		height: 60px;
+		width: 80px;
+		/*background-color: pink;*/
+		float: right;
+		/*border: 1px solid red;*/
+		font-size: 20px;
+		line-height: 60px;
+		cursor: pointer;
+	}
+	.sb2{
+		color: #59432e;
+	}
+	.sb2 p:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	.zmb p{
+		padding-left: 15px;
+	}
+	.sb1{
+		background-color: #735d53;
+		color: white;
+	}
+	.sb1 p:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	#tupian{
+		width: 200px;
+		height: 60px;
+		float: left;
+		/*background-color: orange;*/
+		margin-left: 410px;
+	}
+	#wenzi{
+		width: 200px;
+		height: 60px;
+		/*background-color: pink;*/
+		float: left;
+		color:#59432e;
+	}
+	#wenzi p{
+		line-height: 60px;
+		font-size: 30px;
+
+	}
+	#by{
+		width: 1080px;
+		height: 520px;
+	/*	background-color: orange;*/
+		margin: 0 auto;
+	}
+	#title-b{
+		height: 40px;
+		width: 100%;
+	}
+	#by1{
+		width: 1080px;
+		height: 250px;
+		/*background-color: pink;*/
+	}
+	#by1-1{
+		width: 220px;
+		height: 250px;
+		/*background-color: green;*/
+		float: left;
+	}
+	#by1-2{
+		width: 860px;
+		height: 250px;
+		/*background-color: blue;*/
+		float: right;
+	}
+	#by1-2-1{
+		width: 860px;
+		height: 125px;
+	/*	background-color: pink;*/
+		line-height: 30px;
+		font-size: 30px;
+		color: #59432e;
+	}
+	#by1-2-1 p{
+		width: 190px;
+		position: absolute;
+		top: 200px;
+	}
+	#by1-2-1 p:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	#by1-2-2{
+		width: 860px;
+		height: 125px;
+		/*background-color:purple;*/
+		line-height: 125px;
+		font-size: 25px;
+		color:#59432e;
+	}
+	.by2{
+		width: 1080px;
+		height: 200px;
+		/*background-color: pink;*/
+		line-height: 200px;
+		font-size: 40px;
+		color:#59432e;
+		}
+	.by22{
+		/*background-color:#ddd;*/
+	}
+	#fr{
+		width: 1080px;
+		height: 60px;
+		position: relative;
+		top: 50px;
+		left: 30px;
+		/*background-color: pink;*/
+	}
+	#fr ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	#fr ul li{
+		width: 150px;
+		height: 60px;
+		float: left;
+		/*background-color: green;*/
+		/*border: 1px solid red;*/
+	}
+	.one {
+		cursor: pointer;
+		color:#59432e;
+	}
+</style>
+<body>
+	<!-- 用iframe引入，页面头部 -->
+	<iframe id="top" src="header/header_mine.html" width="100%" height="45" frameborder="0" scrolling="no"></iframe>
+<div id="titlem">
+	<div id="tupian"><img style="width: 80%;position: relative;left: 45px;top: 5px;" src="../icon/4icon/momobrown.png" style="width: 200px;"></div>
+	<div id="wenzi">
+		<p>·写读书笔记</p>
+
+	</div>
+	<div class="zmb sb1"><p>提交</p></div>
+	<div class="zmb sb2"><p>预览</p></div>
+</div>
+<div id="title-b"></div>
+<div id="by">
+	<div id="by1">
+		<div id="by1-1"><img src="../icon/4icon/s33492042.jpg" style="height: 200px;margin-top: 25px;margin-left: 30px;"></div>
+		<div id="by1-2">
+			<div id="by1-2-1">
+				<p>萨拉戈萨手稿</p>
+			</div>
+			<div style="position: relative;bottom: 40px;" id="by1-2-2">
+				<p>[波兰] 扬·波托茨基 / 方颂华 / 浦睿文化·湖南文艺出版社 </p>
+			</div>
+		</div>
+	</div>
+	<div style="position: relative;top: 40px;border-bottom: 1px solid #ddd;padding-bottom: 20px;" id="by2">
+		<input id="txt" type="text" placeholder="填写标题或章节，页码" style="height: 198px;width: 1078px;font-size: 30px;text-align: center;border: 1px solid #ddd;border-radius: 6px;">
+		<!-- <p>填写标题或章节，页码</p> -->
+	</div>
+	<div id="fr">
+		<ul>
+			<li class="tu1"><img src="../icon/4icon/QQ截图20191231003629.png" style="padding-left: 95px;padding-top: 8px;"></li>
+			<li class="one" style="line-height: 60px;font-size: 20px;color:#59432e;"><p>插入图片</p></li>
+			<li class="tu2"><img src="../icon/4icon/QQ截图20191231003651.png" style="padding-left: 95px;padding-top: 8px;"></li>
+			<li class="one" style="line-height: 60px;font-size: 20px;color:#59432e;">添加摘录</li>
+		</ul>
+	</div>
+</div>
+	<div class="by2 by22" style="margin: 0 auto;">
+		<input id="txx" type="text" name="" value placeholder="写下你的想法吧...." style="height: 100px;width: 1078px;font-size: 20px;text-align: center;border: 1px solid #ddd;border-radius: 6px;">
+		<!-- <p>填写标题或章节，页码</p> -->
+	</div>
+	<!-- 用iframe引入，页面底部 -->
+	<iframe id="bottom" src="footer.html" width="100%" height="70" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>

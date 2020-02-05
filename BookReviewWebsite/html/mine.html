@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我的主页</title>
+	<base target="_parent" />
+</head>
+<style type="text/css">
+	*{
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+	body{
+		background-color: #fbfaf6;
+	}
+	#by{
+		height: 1200px;
+		/*background-color: orange;*/
+		width: 1080px;
+		margin: 0 auto;
+	}
+	#title{
+		height: 150px;
+		/*background-color: pink;*/
+		width: 1080px;
+		position: relative;
+		top: 30px;
+	}
+	#title ul li{
+		float: left;
+		padding-left: 20px;
+		list-style: none;
+	}
+	#title-t{
+		height: 120px;
+		width: 1080px;
+		/*background-color: blue;*/
+	}
+	#title-t-l{
+		height: 120px;
+		width: 180px;
+		/*background-color: pink;*/
+		float: left;
+	}
+	#title-t-r{
+		height: 120px;
+		width: 900px;
+		/*background-color: grey;*/
+		float: right;
+		color:#59432e;
+	}
+	#title-t-r-t{
+		height: 60px;
+		width: 900px;
+	/*	background-color: green;*/
+		line-height: 60px;
+		font-size: 30px;
+	}
+	#title-t-r-b{
+		height: 60px;
+		width: 900px;
+		/*background-color: blue;*/
+		line-height: 60px;
+		font-size: 20px;
+		color:#59432e;
+		font-style: oblique;
+	}
+	#title-b{
+		height: 30px;
+		width: 1080px;
+		/*background-color: green;*/
+	}
+	#title-b ul{
+		width: 600px;
+		height: 30px;
+		/*background-color:grey;*/
+		padding: 0 ;
+		margin-left: 180px;
+	}
+	#title-b ul li{
+		/*width: 100px;*/
+		height: 20px;
+		line-height: 20px;
+		width: fit-content;
+		/*background-color: pink;*/
+		/*border: 1px solid red;*/
+		font-size: 15px;
+		/*color: white;*/
+		margin-top: 5px;
+	}
+	#title-b ul li a{
+		text-decoration: none;
+		/*width: fit-content;*/
+	}
+	a:hover{
+		background-color: #ddd;
+		border: 0px;
+		border-radius: 4px;
+		padding: 4px 15px;
+		color: white;
+	}
+	#zmb{
+		height: 250px;
+		width: 1080px;
+		/*background-color:white;*/
+	}
+	#zmc{
+		height: 250px;
+		width: 1080px;
+		/*background-color: purple;*/
+	}
+	#zmd{
+		height: 250px;
+		width: 1080px;
+		/*background-color:green;*/
+	}
+	#zmb-t{
+		height: 50px;
+		width: 1080px;
+		/*background-color: purple;*/
+	}
+	#zmb-b{
+		height: 200px;
+		width: 1080px;
+		/*background-color: green;*/
+	}
+	#zmb-b-l{
+		height: 200px;
+		width: 180px;
+	/*	background-color: pink;*/
+		float: left;
+	}
+	#zmb-b-r{
+		height: 200px;
+		width:900px;
+		/*background-color: blue;*/
+		float: right;
+	}
+	#zmb-b-r p{
+		line-height: 30px;
+		font-size: 20px;
+		border: 0px;
+		height: fit-content;
+		width: fit-content;
+		margin-top: 20px;
+		text-indent: 35px;
+		color:#59432e;
+	}
+	#zmb-t p{
+		float: left;
+	}
+	.wz1{
+		height: 50px;
+		width: fit-content;
+		line-height: 50px;
+		font-size: 25px;
+		color:#59432e;
+	}
+	.wz2{
+		height: 20px;
+		width: fit-content;
+		line-height: 15px;
+		font-size: 15px;
+		margin-top: 15px;
+		cursor: pointer;
+		color:#59432e;
+	}
+	.wz3{
+		height: 30px;
+		width: 70px;
+		line-height: 30px;
+		font-size: 15px;
+		margin-top: 15px;
+		border: 0px;
+		border-radius: 3px;
+		cursor: pointer;
+		color: white;
+		background-color: #59432e;
+		text-align: center;
+	}
+	.wz2:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	.wz3 a{
+		text-decoration: none;
+		color: white;
+	}
+	.wz3 a:hover{
+		background-color: #735d53;
+		color: white;
+	}
+	#zmc-b{
+		height: 200px;
+		width: 1080px;
+		/*background-color: pink;*/
+	}
+	.zmsb{
+		height: 198px;
+		width: 268px;
+		border-top: 1px dashed #888;
+		float: left;
+		color:#59432e;
+		position: relative;
+		top: 5px;
+	}
+	.zmsb ul{
+		padding: 0px;
+		list-style: none;
+	}
+	.zmsb li{
+		width: 270px;
+		height:40px;
+		line-height: 40px;
+		color:#59432e;
+		}
+</style>
+<body>
+	<!-- 用iframe引入，页面头部 -->
+	<iframe id="top" src="header/header_mine.html" width="100%" height="45" frameborder="0" scrolling="no"></iframe>
+<div id="by">
+	<div id="title">
+		<div id="title-t">
+			<div id="title-t-l"><img style="width: 60%;position: relative;left: 20px;top: 10px;border: 10px solid #ddd;" src="../icon/5icon/user.jpg"></div>
+			<div id="title-t-r">
+				<div id="title-t-r-t"><p>Yukinah</p></div>
+				<div id="title-t-r-b"><p>(添加签名档)</p></div>
+			</div>
+		</div>
+		<div id="title-b">
+			<ul>
+				<li><a href="" style="text-decoration: none;color:#59432e;width: fit-content;height: fit-content;">我的主页</a></li>
+				<li><a href="" style="text-decoration: none;color:#59432e;width: fit-content;height: fit-content;">我的书单</a></li>
+				<li><a href="" style="text-decoration: none;color:#59432e;width: fit-content;height: fit-content;">我的书评</a></li>
+				<li><a href="" style="text-decoration: none;color:#59432e;width: fit-content;height: fit-content;">读书笔记</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="position: relative;top: 50px;" id="zmb">
+		<div id="zmb-t">
+			<p class="wz1">我的书评·····</p>
+			<p class="wz2">（全部）</p>
+			<p class="wz3" style="float: right;"><a href="createreview.html">+书评</a></p>
+		</div>
+		<div id="zmb-b">
+			<div id="zmb-b-r">
+				<div>
+				<p>波托茨基爵士值得尊敬，他是薄伽丘和乔叟之后继承印度－阿拉伯叙事学的重要一环，在中国则可以将《酉阳杂俎》视作同类性质的叙事。有良好的胃口，视野，对世界始终保持着好奇，所涉地域是全球性质的，就好比乔叟在他的故>事中从不放弃他同时代的来自东方的伟大人物忽必烈汗这样的传奇人物一样，处在英国岛屿的乔叟也被欧亚大陆的剧变所摄。</p>
+				</div>
+			</div>
+			<div id="zmb-b-l"><img src="../icon/5icon/s33492042.jpg" style="height: 180px;margin-top: 10px;margin-left: 25px;"></div>
+		</div>
+	</div>
+	<div style="position: relative;top: 100px;" id="zmc">
+		<div id="zmb-t">
+			<p class="wz1">我的书单·····</p>
+			<p class="wz2">（创建1·关注0）</p>
+			<p class="wz3" style="float: right;">新建书单</p>
+		</div>
+		<div id="zmc-b">
+			<div class="zmsb">
+				<ul>
+					<li>《白鹿原》</li>
+					<li>《叫魂》</li>
+					<li>《国富论》</li>
+					<li>《解忧杂货铺》</li>
+					<li>《月亮与六便士》</li>
+				</ul>
+			</div>
+			<div class="zmsb">
+				<ul>
+					<li>《挪威的森林》</li>
+					<li>《我们仨》</li>
+					<li>《瓦尔登湖》</li>
+					<li>《月亮与六便士》</li>
+					<li>《海边的卡夫卡》</li>
+				</ul>
+			</div>
+			<div class="zmsb">
+				<ul>
+					<li>《白夜行》</li>
+					<li>《天龙八部》</li>
+					<li>《追风筝的人》</li>
+					<li>《乡土中国》</li>
+					<li>《资本论》</li>
+				</ul>
+			</div>
+			<div class="zmsb">
+				<ul>
+					<li>《菊与刀》</li>
+					<li>《时间简史》</li>
+					<li>《围城》</li>
+					<li>《大数据时代》</li>
+					<li>《数学之美》</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="zmd">
+		<div style="position: relative;top: 150px;" id="zmb-t">
+			<p class="wz1">留言板·····</p>
+			<p class="wz2">（全部）</p>
+		</div>
+		<input type="text" placeholder="请在此处对给用户留言" style="width: 960px;height: 160px;border: 2px solid #ddd;border-radius: 7px; background-color: white;margin-top: 10px;position: relative;top: 150px;left: 20px;font-size: 20px;text-align: center;">
+	</div>
+</div>
+	<!-- 用iframe引入，页面底部 -->
+	<iframe id="bottom" src="footer.html" width="100%" height="70" frameborder="0" scrolling="no"></iframe>
+</body>
+
+</html>

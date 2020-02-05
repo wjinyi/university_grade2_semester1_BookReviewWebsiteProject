@@ -1,0 +1,91 @@
+		*{margin: 0;padding:0;}	
+		body{
+			background-color: #fbfaf6;
+		}
+		.top{
+			/*整个顶部容器高度和颜色*/
+			height: 45px;
+			line-height: 45px;
+			background-color: #664b3d;
+		}
+		.row1{
+			/*整个第一行容器宽度和颜色*/
+			margin: 0 auto;
+			width: 1080px;
+			/*background-color: grey;*/
+			overflow: hidden;
+		}	
+		.left{
+			height: 45px;
+			width: 170px;
+			float: left;
+			position: relative;
+			/*background-color: pink;*/
+			/*overflow: hidden;*/
+		}
+		#momoicon{
+			/*第一行logo图片*/
+			height: 50px;
+			/*设置了图片高度或宽度，图片将等比缩放*/
+			float: left;
+			position: relative;
+			top: -3px;
+
+		}
+		.right{
+			/*整个第一行右部的样式*/
+			height: 45px;
+			width: 910px;
+			float: left;
+			position: relative;
+			left: 8px;
+		}
+		ul{
+			height: 45px;
+			list-style: none;
+			float: left;
+			position: relative;
+			/*background-color: yellow;*/
+			padding-left: 15px;
+		}		
+		li a{
+			text-decoration: none;
+			height: 45px;
+			list-style: none;
+			float: left;
+			position: relative;
+			/*padding上右下左顺时针顺序*/
+			/*padding:5px 10px 15px 20px;*/
+			padding: 0px 15px;
+			font-family: "黑体";
+			font-weight: bold;
+			color: #fbfaf6;
+		}
+		ul li{
+
+			line-height: 45px;
+			float: left;
+
+		}
+		/*a{
+			text-decoration: none;
+		}*/
+		form{
+			height: auto;
+			float: right;
+			position: relative;
+			right: 8px;
+			top: 10px;
+			/*background-color: green;*/
+		}
+		.search{
+			float: right;
+		}
+		.square{
+			position: relative;
+		}
+		.scope{
+			position: absolute;
+			left: 244px;
+			bottom: 2px;
+		}

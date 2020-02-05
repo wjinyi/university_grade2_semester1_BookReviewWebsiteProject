@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>萨拉戈萨手稿详情页·书评页</title>
+	<base target="_parent" />
+</head>
+<style type="text/css">
+	*{margin: 0;padding: 0;}
+	body{
+		background-color: #fbfaf6;
+	}
+	.by{
+		width: 1080px;
+		height: 2500px;
+		/*background-color: orange;*/
+		margin: 0 auto;
+	}
+	#topm{
+		width: 1080px;
+		height: 100px;
+		/*background-color: pink;*/
+		line-height: 40px;
+		font-size: 30px;
+		transform-style: '黑体';
+
+	}
+	#top-1{
+	padding-top: 55px;
+	color:#59432e;
+	}
+	#top-b-1{
+		width: 270px;
+		height:380px;
+		/*background-color: green;*/
+		float: left;
+
+	}
+	#top-b-2{
+		width: 540px;
+		height: 380px;
+		/*background-color:grey;*/
+		float: left;
+		color:#59432e;
+	}
+	#top-b-3{
+		height: 380px;
+		width: 270px;
+		/*background-color: green;*/
+		float: left;
+	}
+	#tupian1{
+		max-width: 220px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	#top-b-2 ul {
+		padding-top: 20px;
+	}
+	#top-b-2 ul li{
+		list-style: none;
+		width: 500px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 20px;
+	}
+	.wenzi{
+		color: blue;
+	}
+	.wenzi:hover{
+		color: white;
+		background-color: blue;
+		cursor: pointer;
+	}
+	#tupian2{
+		width: 240px;
+		padding-top: 20px;
+
+	}
+	#bottom1{
+		height: 40px;
+		width: 1080px;
+		/*background-color: green;*/
+		float: left;
+	}
+	#bottom5 ul li{
+		width: 70px;
+		height: 30px;
+		border: 0px;
+		border-radius: 4px;
+		background-color: #59432e;
+		line-height: 30px;
+		font-size: 15px;
+		margin-left: 20px;
+		text-align: center;
+		margin-top: 3px;
+		/*background-color: pink;
+*/		cursor: pointer;
+		color: white;
+		float: left;
+		list-style: none;
+	}
+	#bottom2{
+		width: 250px;
+		height: 40px;
+		float: left;
+		/*background-color: grey;*/
+		margin-left: 30px;
+	}
+	#bottom2 span{
+		width: 55px;
+		line-height: 40px;
+		font-size: 17px;
+		margin-left: 10px;
+		float: left;
+		color:#59432e;
+	}
+	#bottom3{
+		width: 130px;
+		height: 30px;
+		float: left;
+		margin-top: 7px;
+	}
+	#one1{
+		width: 1080px;
+		height: 35px;
+		/*background-color: pink;*/
+		float: left;
+		color:#59432e;
+	}
+	
+	#one1 ul li{
+		height: 30px;
+		width: fit-content;
+
+	/*	width: 60px;*/
+		font-size: 5px;
+		line-height: 35px;
+		font-size: 12px;
+		margin-left: 30px;
+		color:#59432e;
+	}
+	#one1 ul li p{
+		height:fit-content;
+	}
+	#one1 ul li p:hover{
+		background-color: blue;
+		cursor: pointer;
+		color: white;
+	}
+	.one2{
+
+	}
+	.one2 li{
+		float: left;
+	}
+	.one3{
+		width: 66px;
+		height: 30px;
+		/*background-color: grey;*/
+		line-height: 30px;
+		font-size: 15px;
+		float: right;
+		border: 0px;
+		border-radius: 3px;
+		background-color: #59432e;
+		margin-right: 30px;
+		color: white;
+		text-align: center;
+	}
+	.zuozi{
+		width: 1080px;
+		height: 30px;
+		margin: 0 auto;
+		/*background-color: blue;*/
+		float: left;
+	}
+	h4{
+		width: 1080px;
+		float: left;
+		height: 30px;
+		line-height: 30px;
+		font-size: 25px;
+		color:#59432e;
+	}
+	.middle{
+		width: 1080px;
+		margin: 0 auto;
+		height: 360px;
+		/*background-color: green;*/
+		padding-top: 50px;
+		color:#59432e;
+		position: relative;
+		top: 40px;
+	}
+	.middle p{
+		line-height: 25px;
+		font-size: 15px;
+	}
+	#bottom-b{
+		height: 30px;
+		width: 1080px;
+		margin: 0 auto;
+	/*	background-color: pink;*/
+	}
+	#bottom-b-1{
+		float: left;
+		width: 80px;
+		height: 28px;
+		line-height: 28px;
+		font-size: 14px;
+		background-color: #59432e;
+		border: 0px;
+		color: white;
+		border-radius: 3px;
+		text-align: center;
+		margin-left: 50px;
+		cursor: pointer;
+	}
+	#bottom-b-2{
+		line-height: 28px;
+		font-size: 13px;
+		color: white;
+		float: right;
+		width: 60px;
+		height: 28px;
+		/*background-color: green;*/
+		margin-right: 60px;
+		text-align: center;
+		border: 0px;
+		background-color: #59432e;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	#bottom-b-2 a:hover{
+		color: white;
+		background-color: grey;
+	}
+	.mid2{
+		margin-top: -20px;
+	}
+	.mid3{
+		margin-top: -20px;
+		height: 180px;
+	}
+	.zm{
+		width: 1080px;
+		height: 40px;
+		/*background-color: grey;*/
+		margin: 0 auto;
+
+	}
+	.zm1{
+		width:90
+		height: 40px;
+		/*background-color: gray;*/
+		float: left;
+		line-height: 40px;
+		color:#59432e;
+	}
+	.zm2{
+		width: 80px;
+		height: 30px;
+		float: left;
+	}
+	.zm3{
+	/*	background-color: pink;*/
+		float: left;
+		width: fit-content;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.zm3 a{
+		text-decoration: none;
+		color: #59432e;
+	}
+	.zm3 a:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	#zmw{
+		height: 35px;
+		width: 1080px;
+		/*background-color: green;*/
+		margin: 0 auto;
+	}
+	#zmw ul li{
+		color:#59432e;
+		font-size: 15px;
+		/*height: 25px;*/
+		line-height: 25px;
+		padding-right: 3px;
+		width: 100px;
+		margin-top: 5px;
+		cursor: pointer;
+		height: fit-content;
+	}
+	#zmw li:hover{
+		background-color: grey;
+		color: white;
+		/*position: relative;
+		top: 30px;*/
+	}
+	#zmw-2{
+		float: right;
+		height: 33px;
+		width: 80px;
+		background-color: #59432e;
+		margin-right: 100px;
+		border: 0px;
+		border-radius: 6px;
+		line-height: 33px;
+		cursor: pointer;
+		color: white;
+		text-align: center;
+	}
+	#zmw-2 a{
+		text-decoration: none;
+		color: white;
+		height: 33px;
+		width: 80px;
+		background-color: #59432e;
+		border: 0px;
+		border-radius: 6px;
+		padding: 6px 2.5px;
+	}
+	#zmw-2 a:hover{
+		background-color: #735d53;
+		color: white;
+	}
+	#zmw-2 a:active{
+		background-color: #59432e;
+		color: white;
+	}
+	#zme{
+		width: 1080px;
+		height: 200px;
+		/*background-color: pink;*/
+		float: left;
+		color:#59432e;
+		position: relative;
+		top: 50px;
+	}
+	#zme-1{
+		width: 80px;
+		height: 200px;
+	/*	background-color: blue;*/
+		float: left;
+	}
+	#zme-2{
+		width: 1000px;
+		height: 200px;
+		/*background-color: grey;*/
+		float: right;
+	}
+	#zme-2-1{
+		height: 30px;
+		width: 1000px;
+		/*background-color:grey;*/
+	}
+	#zme-2-2{
+		height: 30px;
+		width: 1000px;
+		/*background-color: pink;*/
+	}
+	#zme-2-3{
+		height: 140px;
+		width: 1000px;
+		/*background-color: green;*/
+	}
+	.tupiana{
+		width: 70px;
+		height: 80px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	.zme-2-1-1{
+		font-size: 20px;
+		color: blue;
+		line-height: 20px;
+		width: fit-content;
+		padding-top: 5px;
+	}
+	.zme-2-1-1:hover{
+		background-color: blue;
+		color: white;
+	}
+	#zme-2-2-1{
+		width: 110px;
+		height: 30px;
+		/*background-color: pink;*/
+		float: left;
+	}
+	#zme-2-2-2{
+		width:240px;
+		height: 30px;
+		float:left;
+		/*background-color: grey;*/
+	}
+	.zmea:hover{
+		color: white;
+		background-color: blue;
+	}
+	.zmr{
+		
+	}
+</style>
+<body>
+	<!-- 用iframe引入，页面头部 -->
+	<iframe id="top" src="header/header_review.html" width="100%" height="45" frameborder="0" scrolling="no"></iframe>
+<div class="by">
+	<div id="topm">
+		<p id="top-1">萨拉戈萨手稿</p>
+	</div>
+	<div id="top-b">
+		<div id="top-b-1">
+			<img src="../icon/s33492042.jpg " id="tupian1">
+		</div>
+		<div id="top-b-2">
+			<ul>
+				<li>作者: <span class="wenzi">[波兰] 扬·波托茨基</span></li>
+				<li>出版社: 浦睿文化·湖南文艺出版社</li>
+				<li>出品方: <span class="wenzi">浦睿文化</span></li>
+				<li>原作名: Manuscrit trouvé à Saragosse</li>
+				<li>译者: <span class="wenzi">方颂华</span></li>
+				<li>出版年: 2019-11</li>
+				<li>页数: 936</li>
+				<li>定价: 118.00元</li>
+				<li>装帧: 平装</li>
+				<li>ISBN: 9787540494155</li>
+			</ul>
+		</div>
+		<div id="top-b-3">
+			<img src="../icon/QQ截图20191229203434.png" id="tupian2">
+		</div>
+	</div>
+	<div id="bottom1">
+		<div id="bottom5">
+			<ul>
+				<li>想读</li>
+				<li>在读</li>
+				<li>读过</li>
+			</ul>
+		<div id="bottom2">
+			<span>评价:</span>
+			<div id="bottom3">
+				<img src="../icon/QQ截图20191229205253.png">
+			</div>
+		</div>
+	</div>
+	<div id="one1">
+		<ul class="one2">
+			<li style="list-style: url(../icon/add-review.gif);" class="en"><p>写笔记</p></li>
+			<li style="list-style: url(../icon/add-review.gif);"class="en"><p>写书评</p></li>
+			<li style="list-style: url(../icon/add-cart.gif);"class="en"><p>加入购物车</p></li>
+			<li>分享到</li>
+		</ul>
+		<div class="one3"><span>推荐</span></div>
+	<div class="middle-t zuozi">
+		<h4>内容简介  · · · · · ·</h4>
+	</div>
+	<div class="middle mid1">
+		<p style="text-indent: 35px;">亲爱的阿方索，</p>
+		<p style="text-indent: 35px;">我们来到这里并非因为偶然……</p>
+		<p style="text-indent: 35px;">我们在等你。</p>
+		<p style="text-indent: 35px;">瓦隆卫队的年轻军官阿方索赶赴马德里加入他的军队。但他很快就发现，他被困在一家神秘的路边客栈，和形形</p>
+		<p>色色的怪人待在一起：小偷、强盗、贵族、妓女与吉卜赛人。他在六十六天里记录下他们的故事。大约四十年后，这</p>
+		<p>部手稿在一 个锁起来的箱子里被发现。</p>
+		<p style="text-indent: 35px;">这部关于伪装、魔法、幻想，关于荣誉与怯懦、着魔与诱惑的书，生动刻画了各色人物。小说使用了怪谈、魔</p>
+		<p>幻、爱情、喜剧、哥特等文风，故事中套着故事，被誉为堪比《十日谈》与《一千零一夜》的杰作。</p>
+		<p style="text-indent: 35px;position: relative;
+		top: 40px;">*********************************************</p>
+	</div>
+	<div id="bottom-b">
+		<div id="bottom-b-1">(展开全部)</div>
+		<div id="bottom-b-2">举报</div>
+	</div>
+	<div style="position: relative;top: 50px;" class="middle-t zuozi">
+		<h4>作者简介  · · · · · ·</h4>
+	</div>
+	<div style="position: relative;top: 80px;" class="middle mid2">
+		<p style="text-indent: 35px;">扬·波托茨基</p>
+		<p style="text-indent: 35px;">Jean Potocki</p>
+		<p style="text-indent: 35px;">我们在等你。</p>
+		<p>波兰贵族、旅行家、人种学家、埃及古物学家、语言学家、旅行家、启蒙运动期间受欢迎的作家。他的人生经历</p>
+		<p style="text-indent: 35px;">和功绩，使他在波兰成为一个传奇人物。在波兰之外，他以《萨拉戈萨手稿》闻名。</p>
+		<p>1761年，他出生在波兰一个贵族之家。在日内瓦和洛桑接受教育，两次在波兰军队服役，担任工程兵团指挥官，</p>
+		<p>还曾以马耳他骑士团新人的身份在战舰上待过一段时间。他在法国待过一段时间，随后回到波兰，成为知名出版家，</p>
+		<p style="text-indent: 35px;">出版报纸和小册子。1788年，他在华沙成立自由出版社，创建了这座城市的第一个自由阅读室。</p>
+		<p>1790年，他乘坐热气球在华沙升空，成为波兰第一个乘坐热气球的人，此举为他赢得巨大声誉。他结过两次婚，</p>
+		<p>有五个孩子。他的第一次婚姻以离婚收场。从他的两次婚姻中诞生了许多诽谤性的传闻。1812年，他心力憔悴，身体</p>
+		<p>状况恶化，回到在波多利亚的庄园。他在人生的最...</p>
+	<div id="bottom-b">
+		<div style="position: relative;top: 40px;" id="bottom-b-1">(展开全部)</div>
+	</div>
+	<div style="position: relative;top: 50px;" class="middle-t zuozi">
+		<h4>目录  · · · · · ·</h4>
+	</div>
+	<div style="position: relative;top: 80px;" class="middle mid3">
+		<p>前言</p>
+		<p>第一天 艾米娜和她妹妹齐伯黛的故事</p>
+		<p>戈梅莱斯宫城堡的故事</p>
+		<p>第二天 魔鬼附身的男子帕切科的故事</p>
+		<p>第三天 阿方索·范·沃登的故事</p>
+		<p>拉韦纳的特里武尔奇奥的故事</p>
+	<div id="bottom-b">
+		<div style="position: relative;top: 40px;" id="bottom-b-1">更多</div>
+	</div>
+	<div style="position: relative;top: 40px;" class="zm">
+		<p class="zm1" style="font-size: 20px;line-height: 40px;
+		">读书笔记</p>
+		<p class="zm2" style="font-size: 20px;line-height: 40px;"> · · · · · ·  </p>
+		<p class="zm3 zma" style="font-size: 15px;line-height: 20px;"><a href="bookreview.html">(共5篇)</a></p>
+	</div>
+	<div style="position: relative;top: 40px;" id="zmw">
+		<ul id="zmw-1">
+			<li>按有用程度</li>
+			<li>按页码先后</li>
+			<li>最新笔记</li>
+		</ul>
+		<div style="position: relative;top: 20px;">
+			<p id="zmw-2"><a href="createreview.html">我来写笔记</a></p>
+		</div>
+	</div>
+	<div id="zme">
+		<div id="zme-1"><img src="../icon/u171959722-5.jpg" class="tupiana"></div>
+		<div id="zme-2">
+			<div id="zme-2-1"><p class="zme-2-1-1">关于阿方索的初夜</p></div>
+			<div id="zme-2-2">
+				<div id="zme-2-2-1">
+					<p style="height: 15px;line-height: 15px;margin-top: 7.5px;" class="zmea">爱郊野不爱派对</p>
+				</div>
+				<div id="zme-2-2-2">
+					<p style="height: 15px;line-height: 15px;padding-top: 7.5px;">(一个人碎碎念..别关注，会被拉黑)</p>
+				</div>
+			</div>
+			<div id="zme-2-3">
+				<p class="zmr">P110 无疑，在很多情况下，通过暴力使纯真的血无尽流淌，总会伴有残忍的罪行。但其他的情形同样存在，暴风骤雨也可以为纯真之花创造绽放的空间，而这正是我们的经历。 P117 在那里，我看到了前几天那位借宿在我们小屋的年轻骑士。他躺在床上，身边有两个穿着摩尔人服装的绝色美女。这两个年轻女子对他柔情絮语一番后，便取下他脖子上的圣物，从这一刻起，她们再不能让我感觉到一丝一毫的美，我认出她们就是兄弟谷里的那两个吊死...</p>
+				<p>2019-12-27 22:11</p>
+			</div>
+		</div>
+	</div>
+	<div id="zme">
+		<div id="zme-1"><img src="../icon/u171959722-5.jpg" class="tupiana"></div>
+		<div id="zme-2">
+			<div id="zme-2-1"><p class="zme-2-1-1">第75页</p></div>
+			<div id="zme-2-2">
+				<div id="zme-2-2-1">
+					<p style="height: 15px;line-height: 15px;margin-top: 7.5px;" class="zmea">爱郊野不爱派对</p>
+				</div>
+				<div id="zme-2-2-2">
+					<p style="height: 15px;line-height: 15px;padding-top: 7.5px;">(一个人碎碎念..别关注，会被拉黑)</p>
+				</div>
+			</div>
+			<div id="zme-2-3">
+				<p class="zmr">就在当天弥撒刚结束的时候，莫纳尔迪来看我父亲，并对他这样说道：“我亲爱的佐托，您妻子和她妹妹之间你争我斗的荒唐事，我都听说了。如果您不阻止事态发展，您可能一辈子都不会幸福。因此您只有两条路可以选：要么纠正您妻子的行为，要么过一种可以满足她消费欲望的生活。要是您选择前一条路，我可以给您一根用榛树枝做的棍子，我妻子在世时，我就用这根棍子对付过她。榛树枝还可以做成其他式样的棍子，两头都可以握，这样的...</p>
+				<p>2019-12-27 22:11</p>
+			</div>
+		</div>
+	</div>
+	<div id="zme">
+		<div id="zme-1"><img src="../icon/u171959722-5.jpg" class="tupiana"></div>
+		<div id="zme-2">
+			<div id="zme-2-1"><p class="zme-2-1-1">第36～37页</p></div>
+			<div id="zme-2-2">
+				<div id="zme-2-2-1">
+					<p style="height: 15px;line-height: 15px;margin-top: 7.5px;" class="zmea">爱郊野不爱派对</p>
+				</div>
+				<div id="zme-2-2-2">
+					<p style="height: 15px;line-height: 15px;padding-top: 7.5px;">(一个人碎碎念..别关注，会被拉黑)</p>
+				</div>
+			</div>
+			<div id="zme-2-3">
+				<p class="zmr">此时，我感到一个吊死鬼紧紧抓住了我左脚的脚踝。我拼命挣扎，但另一个吊死鬼又拦住我的去路。他站在我身前，两只眼睛瞪得我胆战心惊，一条鲜红的舌头从嘴里伸出来，仿佛刚出火炉的铁棍。我哀求他放过我，但他毫不理睬。他一手掐住我的脖子，一手冲我脸上一掏，我现在缺的那颗眼球就没了。他将滚烫的舌头伸进我空荡荡的眼眶里，向内摸索着舔我的脑干，我疼得鬼哭狼嚎般地叫起来。 抓住我左脚的那个吊死鬼也凑了上来，他想施展一...</p>
+				<p>2019-12-27 21:09</p>
+			</div>
+		</div>
+	</div>
+	<div id="zme">
+		<div id="zme-1"><img src="../icon/u83438691-2.jpg" class="tupiana"></div>
+		<div id="zme-2">
+			<div id="zme-2-1"><p class="zme-2-1-1">53</p></div>
+			<div id="zme-2-2">
+				<div id="zme-2-2-1">
+					<p style="height: 15px;line-height: 15px;margin-top: 7.5px;" class="zmea">夜鱼</p>
+				</div>
+				<div id="zme-2-2-2">
+					<p style="height: 15px;line-height: 15px;padding-top: 7.5px;">(业余选手)</p>
+				</div>
+			</div>
+			<div id="zme-2-3">
+				<p class="zmr">其中一位穿戴着圣衣圣带的死者走上讲经台，开口问道：“我的各位弟兄，我要在这里公布泰巴尔罗·德·杰拉奇和尼娜·德·杰拉奇两人即将成婚的消息，该死的特里武尔齐奥，您是不是要反对？” 看到这里笑死了，气氛瞬间从恐怖切换到了幽默。</p>
+				<p>2019-12-27 22:11</p>
+			</div>
+		</div>
+	</div>
+	<!-- 用iframe引入，页面底部 -->
+	<iframe id="bottom" src="footer.html" width="100%" height="70" frameborder="0" scrolling="no"></iframe>
+</body>
+
+</html>

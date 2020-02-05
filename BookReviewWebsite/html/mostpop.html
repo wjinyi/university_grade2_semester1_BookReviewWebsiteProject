@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>mostpop</title>
+	<base target="_parent" />
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#by{
+		width: 1080px;
+		height: 2300px;
+		/*background-color: orange;*/
+		margin: 0 auto;
+	}
+	#title-b{
+		width: 1080px;
+		height: 100px;
+		color: #59432e;
+		/*background-color: pink;*/
+
+	}
+	#title-b p{
+		padding-top: 60px;
+		font-size: 30px;
+		line-height: 30px;
+		font-family: '黑体';
+	}
+	#title-b-b{
+		width: 1080px;
+		height: 35px;
+		background-color: #eae0d5;
+		position: relative;
+		top: 30px;
+	}
+	#title-b-b p{
+		width: 150px;
+		height: 31px;
+		float: right;
+		line-height: 31px;
+		font-size: 15px;
+		text-align: center; 
+	}
+	#title-b-b1 a{
+		display: block;
+		background-color: #735d53;
+		position: relative;
+		top: 2px;
+		color: white;
+	}
+	#title-b-b1 a:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	#title-b-b2 a{
+		display: block;
+	/*	background-color: white;*/
+		/*color: pink;*/
+	}
+	#title-b-b2{
+		padding-top: 2px;
+	}
+	#title-b-b2 a:hover{
+		background-color: #59432e;
+		color: white;
+	}
+	#footer-t{
+		width: 1080px;
+		/*background-color: blue;*/
+		height: 3000px;
+		position: relative;
+		top: 10px;
+	}
+	#footer-t ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	#footer-t ul li{
+		width: 1078px;
+		height: 200px;
+		border-top: 1.5px dashed;
+		/*border-right: 1.5px dashed;*/
+		border-color: #ddd;
+		padding: 0;
+		margin: 0;
+	}
+	#title-b-b-b{
+		height: 40px;
+	}
+	.l{
+		float: left;
+		height: 160px;
+		width:35px;
+		background-color: #7db751;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		line-height: 160px;
+		margin-top: 20px;
+		color: white;
+		border: 0px;
+		border-radius: 8px;
+	}
+	.r{
+		float: right;
+		height: 200px;
+		width: 1028px;
+/*		background-color: green;*/
+	}
+	.tu{
+		float: left;
+		max-height: 160px;
+		padding-top: 20px;
+		padding-left: 15px;
+		overflow: hidden;
+	}
+	#ft1{
+		width: 900px;
+		height: 100%;
+		float: left;
+	}
+	.qq{
+		width: 600px;
+		height: 150px;
+		/*background-color: green;*/
+		float: left;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+	.qq1{
+		width: 140px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 20px;
+		color: blue;
+		cursor: pointer;
+		width: fit-content;
+	}
+	.qq1:hover{
+		background-color: blue;
+		color: white;
+	}
+	.qq1 a{
+		text-decoration: none;
+		color: blue;
+	}
+	.qq1 a:hover{
+		background: blue;
+		color: white;
+	}
+	.qq2{
+		color: #59432e;
+	}
+	.qq3{
+		height: 30px;
+		margin-top: 15px;
+	}
+	.qq3 img{
+		height: 25px;
+		width: 75px;
+		float: left;
+		margin-top: 8px;
+	}
+	.qq3 span{
+		width: 30px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 20px;
+		color: red;
+		float: left;
+		margin-top: 8px;
+	}
+	.qq3-1{
+		width: 150px;
+		height: 25px;
+		color: grey;
+		float: left;
+	}
+	.qa{
+		line-height: 25px;
+		font-size: 15px;
+		width: 130px;
+		height: 25px;
+		color: blue;
+		float: left;
+		margin-top: 8px;
+		cursor: pointer;
+	}
+	.qq3-3{
+		width: 90px;
+	}
+/*	.qq3-3{
+		width: 150px;
+		height: 25px;
+		color: blue;
+		float: left;
+	}*/
+	.qa:hover{
+		background: blue;
+		color: white;
+	}
+	.clj{
+		text-decoration: none;
+		color:black;
+		color: #59432e;
+	}
+</style>
+<body>
+	<iframe id="top" src="header/header_week.html" width="100%" height="45" frameborder="0" scrolling="no"></iframe>
+<!-- ------------------------------------------------------------------------余自写html内容部分 -->
+<div id="by">
+	<div id="title-b">
+		<p><strong>本周最佳图书TOP10</strong></p>
+	</div>
+	<div id="title-b-b">
+		<p id="title-b-b1"><a href="" target="" class="clj">虚构类作品榜</a></p>
+		<p id="title-b-b2"><a href="" target="" class="clj">非虚构类作品榜</a></p>
+	</div>
+	<div id="title-b-b-b"></div>
+	<div id="footer-t">
+		<ul>
+			<li id="footer-t-1"style="border-top: 1.5px solid #ddd;">
+				<div class="footer-t-1-l l">❶</div>
+				<div class="footer-t-1-r r">
+					<img src="../icon/s33519539.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">呼吸</p>
+						<p class="qq2">[美] 特德·姜 / 2019-12 / 译林出版社 / 42 / 平装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>9.2</span>
+							<p class="qq3-1">(1282人评价)</p>
+							<p class="qq3-2 qa">纸质版 53.10 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-2">
+				<div class="footer-t-2-l l">❷</div>
+				<div class="footer-t-2-r r">
+					<img src="../icon/s33486117.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">西北雨</p>
+						<p class="qq2">童伟格 / 2019-10 / 四川人民出版社 / 42.00元 / 平装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>8.8.</span>
+							<p class="qq3-1">(219人评价)</p>
+							<p class="qq3-2 qa">纸质版 31.50 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-3">
+				<div class="footer-t-3-l l">❸</div>
+				<div class="footer-t-3-r r">
+					<img src="../icon/s33516463.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">恐妻家</p>
+						<p class="qq2">[日] 伊坂幸太郎 / 2019-11-1 / 南海出版公司 / 58.00 / 精装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>8.6</span>
+							<p class="qq3-1">(685人评价)</p>
+							<p class="qq3-2 qa">纸质版 29.00 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+			</li>
+			<li id="footer-t-4">
+				<div class="footer-t-4-l l">❹</div>
+				<div class="footer-t-4-r r">
+					<img src="../icon/s33486970.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">到婚礼去</p>
+						<p class="qq2">[英] 约翰·伯格 / 2019-10 / 广西师范大学出版社 / 52.00元 / 精装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>7.5</span>
+							<p class="qq3-1">(174人评价)</p>
+							<p class="qq3-2 qa">纸质版 39.00 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-5">
+				<div class="footer-t-5-l l">❺</div>
+				<div class="footer-t-5-r r">
+					<img src="../icon/s33499829.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">热带</p>
+						<p class="qq2">李唐 / 2019-10 / 北京出版集团·北京十月文艺出版社 / 49.00元 / 平装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>8.6</span>
+							<p class="qq3-1">(148人评价)</p>
+							<p class="qq3-2 qa">纸质版 24.90 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-6">
+				<div class="footer-t-6-l l">❻</div>
+				<div class="footer-t-6-r r">
+					<img src="../icon/s33492042.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1"><a href="book_infoandreview.html">萨拉戈萨手稿</a></p>
+						<p class="qq2"> [波兰] 扬·波托茨基 / 2019-11 / 浦睿文化·湖南文艺出版社 / 118.00元 / 平装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>9.0</span>
+							<p class="qq3-1">(290人评价)</p>
+							<p class="qq3-2 qa">纸质版 53.10 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+				
+			</li>
+			<li id="footer-t-7">
+				<div class="footer-t-6-l l">❼</div>
+				<div class="footer-t-6-r r">
+					<img src="../icon/s33499480.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">醉步男</p>
+						<p class="qq2">[日]小林泰三 / 2019-10-1 / 北京时代华文书局 / 49.00 / 精装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>8.6</span>
+							<p class="qq3-1">(3043人评价)</p>
+							<p class="qq3-2 qa">纸质版 23.30 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-8">
+				<div class="footer-t-6-l l">❽</div>
+				<div class="footer-t-6-r r">
+					<img src="../icon/s33516881.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">大象席地而坐</p>
+						<p class="qq2">胡迁 / 2019-11 / 译林出版社 / 58.00 / 精装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>9.0</span>
+							<p class="qq3-1">(754人评价)</p>
+							<p class="qq3-2 qa">纸质版 45.80 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+
+			</li>
+			<li id="footer-t-9">
+				<div class="footer-t-6-l l">❾</div>
+				<div class="footer-t-6-r r">
+					<img src="../icon/s33490619.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">群星</p>
+						<p class="qq2">七月 / 2019-11 / 人民文学出版社 / 45</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>8.4</span>
+							<p class="qq3-1">(304人评价)</p>
+							<p class="qq3-2 qa">纸质版 31.00 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="footer-t-10" style="border-bottom: 1.5px solid #ddd;">
+				<div class="footer-t-6-l l">➓</div>
+				<div class="footer-t-6-r r">
+					<img src="../icon/s33487008.jpg " class="tu">
+					<div class="qq">
+						<p class="qq1">场游戏一次消遣</p>
+						<p class="qq2">[美]詹姆斯·索特 / 2019-11 / 广西师范大学出版社 / 57.00元 / 精装</p>
+						<div class="qq3">
+							<img src="../icon/QQ截图20191229174204.png">
+							<span>9.1</span>
+							<p class="qq3-1">(123人评价)</p>
+							<p class="qq3-2 qa">纸质版 42.80 元起</p>
+							<p class="qq3-3 qa">+ 加入购书单</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- ------------------------------------------------------------------------余自写html内容部分 -->
+
+<!-- 用iframe引入，页面底部 -->
+	<iframe id="bottom" src="footer.html" width="100%" height="70" frameborder="0" scrolling="no"></iframe>
+</body>
+
+</html>

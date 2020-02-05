@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>classicalbook</title>
+	<style type="text/css">
+
+		*{margin: 0;padding: 0;}
+		body{
+			background-color: #fbfaf6;
+		}
+		.main{
+			margin: 0 auto;
+			/*页面宽度1080+padding左右30*/
+			width: 1080px;
+			height: 2550px; /*临时设置*/
+			/*background-color: grey;*/
+			padding: 30px 30px;
+		}
+
+		.main12{
+			position: relative;
+			top: 20px;
+		}
+		.title{
+			/*background-color: yellow;*/
+			font-family: "黑体";
+			font-size: 25px;
+			font-weight: bold;
+			color: #59432e;
+		}
+		.waterfall{
+			position: relative;
+			top: 10px;
+		}
+		.left{
+			/*background-color: pink;*/
+			/*左右两个块中间空80,宽度左右原本各为540*/
+			width: 500px;
+			/*height: 400px;*//*临时设置*/
+			float: left;
+			position: relative;
+			top: 15px;
+
+
+		}
+		.right{
+			/*background-color: green;*/
+			width: 500px;
+			/*height: 400px;*//*临时设置*/
+			float: left;
+			position: relative;
+			left: 80px;
+			top: 15px;
+		}
+		.type{
+			/*background-color: orange;*/
+			font-family: "黑体";
+			font-size: 18px;
+			color: #59432e;
+			position: relative;
+			bottom: 8px;
+		}
+		ul li{
+			list-style: none;
+			position: relative;
+
+		}
+		.bookinfo{
+			width: 500px;
+			height: 180px;
+			/*background-color: #4EFEB3;*/
+			padding: 10px 0px;
+			position: relative; 
+			float: left;
+		}
+
+		.img img{
+			height: 180px;
+			width: 123px;
+			position: relative;
+			float: left;
+		}
+
+		.img{
+			height: 180px;
+			position: relative;
+			float: left;
+		}
+		.fontinfo{
+			height: 180px;
+			width: 367px;
+			/*background-color: red;*/
+			position: relative;
+			left: 10px;
+			float: left;
+			overflow: hidden;
+		}
+		.booklink{
+			padding: 3px 0px;
+			/*background-color: green;*/
+			font-size: 20px;
+		}
+		.booklink a:link{
+			color: #59432e;
+		}
+		.booklink a:visited{
+			color: #59432e;
+		}
+		.booklink a:hover{
+			color: white;
+			background-color: #59432e;
+		}
+		a{
+			text-decoration: none;
+		}
+		.stars{
+			padding: 3px 0px;
+			/*background-color: yellow;*/
+		}
+		.publishinfo{
+			padding-bottom: 5px;
+			/*background-color: orange;*/
+			font-size: 12px;
+			/*color: #59432e;*/
+		}
+		.preview{
+			padding: 3px 0px 0px 0px;
+			/*background-color: pink;*/
+			font-size: 14px;
+			/*color: #59432e;*/
+		}		
+	</style>
+</head>
+<body>
+	<!-- 用iframe引入，页面头部 -->
+	<iframe id="top" src="header/header_famous.html" width="100%" height="45" frameborder="0" scrolling="no"></iframe>
+	<div class="main">
+		<!-- 通过iframe引入bootstrap部分内容，消除了bootstrap样式优先度过高覆盖ul样式的毛病 -->
+		<iframe id="top" src="rollscreen.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+		<div class="main12">
+			<div class="title">
+			<span>···名著经典···</span>
+		</div>
+		<div class="waterfall">
+			<div class="left">
+				<div class="type">
+					<span>国内经典·····</span>
+				</div>
+					<ul>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne01.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">艾迪的自白</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>		
+							</span>
+						</div>						
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne02.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">透明与障碍</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne03.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">真人不露相</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne04.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">西川美和：围</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne05.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">伞学院：天启</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne06.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">历史学与社会</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne07.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">梦幻花</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne08.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">大图景</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne09.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">火光之色</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne10.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">分身</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="type">
+					<span>国外经典·····</span>
+				</div>
+					<ul>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne11.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">天下刀宗</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne12.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">民族的重建</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne13.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">去往猴面包树</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne14.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">川久保玲：边</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne15.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">一只猫的生活</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne16.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">中国文学中的</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne17.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">雪人</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne18.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">讲谈社·兴亡的</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne19.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">天授之子</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="bookinfo">
+							<div class="img"><img src="../icon/homepage/ne20.jpg"></div>
+							<span>
+							<div class="fontinfo">
+								<div class="booklink"><a href="#">俞军产品方法论</a></div>
+								<div class="stars"><img src="../icon/QQ截图20191229174204.png"></div>
+								<div class="publishinfo"> 黄锦树 / 后浪 | 上海文艺出版社 / 2020-1</div>
+								<div class="preview">黄锦树两本早期短篇小说集的合集。故事多发生在南洋的胶林小镇：移居南洋的华人处在野兽环伺、种族压迫、殖民侵略、认同焦虑的环境中，面临各种形式的离散、失踪，及死亡。</div>
+							</div>			
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- 用iframe引入，页面底部 -->
+	<iframe id="bottom" src="footer.html" width="100%" height="70" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
